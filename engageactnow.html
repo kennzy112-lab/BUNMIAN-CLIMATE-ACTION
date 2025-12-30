@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <center>
+  <nav class="navbar">
+    <a href="home.html" class="nav">Home</a> |
+    <a href="vision.html" class="nav">Vision</a> |
+    <a href="principle.html" class="nav">Principle</a> |
+    <a href="focusarea.html" class="nav">Focus Area</a> |
+    <a href="engagement.html" class="nav">Engagement</a> |
+    <a href="contact.html" class="nav">Contact</a>
+  </nav>
+        </center>
+</header>
+<section id="engage" class="engage-section">
+  <div class="container">
+    <!-- Header -->
+    <div class="engage-header">
+      <h2>Engage With Us</h2>
+      <p>Join Bunmian’s mission to foster sustainable innovation, cultural awareness, and future-ready communities.</p>
+    </div>
+
+    <!-- Engagement Cards -->
+    <div class="engage-cards">
+      <!-- Card 1 -->
+      <div class="engage-card">
+        <h3>Community Collaboration</h3>
+        <p>Participate in programs designed to empower citizens and integrate local insights into sustainable development.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="engage-card">
+        <h3>Education & Awareness</h3>
+        <p>Access learning resources, workshops, and policy briefings that shape climate-smart and culturally sensitive urban growth.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="engage-card">
+        <h3>Public Consultation</h3>
+        <p>Provide input on urban design, social initiatives, and community planning through structured consultation channels.</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="engage-card">
+        <h3>Innovation Challenges</h3>
+        <p>Join youth and professional innovation programs that contribute to scalable, high-impact urban solutions.</p>
+      </div>
+    </div>
+
+    <!-- Call-to-Action Form -->
+    <div class="engage-form">
+      <h3>Reach Out</h3>
+      <form id="engagementForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <select name="interest" id="interest" required>
+          <option value="" disabled selected>Select Your Interest</option>
+          <option value="Community Collaboration">Community Collaboration</option>
+          <option value="Education & Awareness">Education & Awareness</option>
+          <option value="Public Consultation">Public Consultation</option>
+          <option value="Innovation Challenges">Innovation Challenges</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="text" name="otherInterest" id="otherInterest" placeholder="Please specify" style="display:none;">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <p class="success-message" style="display:none;">Thank you! Your message has been sent successfully.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</body>
+</html>

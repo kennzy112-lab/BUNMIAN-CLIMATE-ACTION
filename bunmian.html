@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bunmiancity LTD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    /* Reset & Global */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: #1A1A1A; background: #F9F9F9; line-height: 1.6; }
+    a { text-decoration: none; color: inherit; }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(120deg, #0F6B3D, #78A563);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      padding: 0 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero h1 { font-family: 'Cinzel', serif; font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; max-width: 700px; }
+
+    /* Mission Section */
+    .mission-section {
+      padding: 4rem 2rem;
+      background: #F1F1F1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+    .mission-card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      flex: 1 1 300px;
+      min-width: 280px;
+      max-width: 480px;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.6s ease-out;
+    }
+    .mission-card h3 { font-family: 'Cinzel', serif; margin-bottom: 1rem; color: #0F6B3D; }
+    .mission-card p { font-size: 1rem; }
+
+    /* Projects Section */
+    .projects-section {
+      padding: 4rem 2rem;
+      background: #F9F9F9;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    .card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.12); }
+    .card-image { position: relative; }
+    .card-image img { width: 100%; height: 180px; object-fit: cover; }
+    .card-tag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: #FFD966;
+      color: #0F6B3D;
+      font-weight: 600;
+      padding: 0.3rem 0.7rem;
+      border-radius: 5px;
+      font-size: 0.8rem;
+    }
+    .card h3 { padding: 1rem; font-family: 'Cinzel', serif; font-size: 1.2rem; color: #0F6B3D; }
+    .card p { padding: 0 1rem 1rem 1rem; font-size: 0.95rem; color: #333; }
+
+    /* Footer */
+    footer {
+      background: #0F6B3D;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+header {
+  background-color: #f4f7f6; /* soft, neutral background */
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #4CAF50; /* highlight on hover */
+}
+
+    /* Scroll animations */
+    .fade-in { opacity: 1 !important; transform: translateY(0) !important; }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <a href="home.html" class="nav">Home</a> |
+    <a href="vision.html" class="nav">Vision</a> |
+    <a href="principle.html" class="nav">Principle</a> |
+    <a href="focusarea.html" class="nav">Focus Area</a> |
+    <a href="engagement.html" class="nav">Engagement</a> |
+    <a href="contact.html" class="nav">Contact</a>
+  </nav>
+</header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Bunmiancity LTD</h1>
+    <p>Building Tomorrow’s Africa, Rooted in Cultural Heritage. Creating future-ready, sustainable cities that inspire generations to come.</p>
+  </section>
+<section class="bunmian-section" style="padding: 4rem 2rem; background: #E6F4EA;">
+  <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+    <h2 style="font-family: 'Cinzel', serif; font-size: 2.5rem; color: #0F6B3D; margin-bottom: 1rem;">What Bunmian Is</h2>
+    <p style="font-size: 1.1rem; color: #333; line-height: 1.8; margin-bottom: 1rem;">
+      Bunmiancity LTD is a visionary, youth-led initiative focused on creating sustainable, future-ready cities across Africa. At its core, Bunmian aims to transform urban living by harmonizing cutting-edge technology, climate-conscious planning, and the preservation of Africa’s rich cultural heritage. 
+    </p>
+    <p style="font-size: 1.1rem; color: #333; line-height: 1.8; margin-bottom: 1rem;">
+      The initiative is more than just urban development; it is a platform for socio-economic growth, environmental stewardship, and innovation. Each Bunmian city is designed to deliver world-class infrastructure while enabling local communities to thrive. From energy systems powered by solar, wind, and waste-to-energy solutions, to eco-friendly buildings, advanced transportation, and green public spaces, Bunmian ensures sustainability is at the heart of every design decision.
+    </p>
+    <p style="font-size: 1.1rem; color: #333; line-height: 1.8; margin-bottom: 1rem;">
+      Bunmian also prioritizes education, climate engagement, and cultural preservation. Through tree-planting programs, community-led initiatives, and climate education hubs, it empowers citizens to actively participate in shaping a greener, cleaner future. The project’s tourism and innovation zones are carefully planned to attract global attention while creating jobs and opportunities for local entrepreneurs.
+    </p>
+    <p style="font-size: 1.1rem; color: #333; line-height: 1.8; margin-bottom: 1rem;">
+      Ultimately, Bunmian is a blueprint for Africa’s sustainable development. It demonstrates that modern cities can be technologically advanced, environmentally responsible, and culturally rooted, all at once. This initiative sets a benchmark for how Africa can lead in smart urban innovation, delivering enduring value for citizens, investors, and generations to come.
+    </p>
+  </div>
+</section>
+
+  <!-- Mission & Value Proposition -->
+  <section class="mission-section">
+    <div class="mission-card">
+      <h3>Mission Statement</h3>
+      <p>Design and operationalize integrated smart cities blending modern engineering with time-honoured African values. Catalyse growth, champion sustainability, preserve culture, enable prosperity, and deliver operational excellence.</p>
+    </div>
+    <div class="mission-card">
+      <h3>Value Proposition</h3>
+      <p>Bunmiancity provides a differentiated city development platform built on innovation, sustainability, and heritage—creating enduring value for citizens, investors, and future generations.</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+
+    <!-- Cards 1-15 -->
+    <div class="card">
+      <div class="card-image">
+        <img src="image/renewablen.jpg" alt="Solar Energy">
+        <span class="card-tag">Energy</span>
+      </div>
+      <h3>Renewable Energy Integration</h3>
+      <p>All Bunmian cities powered by solar, wind, and waste-to-energy solutions, reducing carbon footprint. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/greentech.webp" alt="Green Infrastructure">
+        <span class="card-tag">Infrastructure</span>
+      </div>
+      <h3>Green Urban Infrastructure</h3>
+      <p>Eco-friendly buildings, parks, and urban forests designed to improve air quality and cool the cities. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/watecons.jpg" alt="Water Management">
+        <span class="card-tag">Water</span>
+      </div>
+      <h3>Water Conservation Systems</h3>
+      <p>Advanced drainage, recycling, and rainwater harvesting to ensure sustainable water use. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/waste.jpg" alt="Waste to Energy">
+        <span class="card-tag">Energy</span>
+      </div>
+      <h3>Waste-to-Energy Solutions</h3>
+      <p>Converting organic waste into energy, reducing pollution and promoting circular sustainability. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/transport.jpg" alt="Smart Transport">
+        <span class="card-tag">Transport</span>
+      </div>
+      <h3>Smart & Eco Transport</h3>
+      <p>Electric buses, monorails, bike lanes, and pedestrian-friendly roads to cut emissions. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/eco-tourism.jpg" alt="Eco Tourism">
+        <span class="card-tag">Tourism</span>
+      </div>
+      <h3>Eco-Tourism Zones</h3>
+      <p>Green resorts and tourism areas that educate visitors about sustainability and conservation. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/commun.jpg" alt="Community Engagement">
+        <span class="card-tag">Community</span>
+      </div>
+      <h3>Community Climate Engagement</h3>
+      <p>Programs to involve citizens in tree planting, clean-ups, and local climate initiatives. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/treepl.jpg" alt="Tree Planting">
+        <span class="card-tag">Nature</span>
+      </div>
+      <h3>Tree Planting Initiative</h3>
+      <p>Planting over 50 million trees across Nigeria and West Africa to restore ecosystems and reduce carbon. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/deepsea.gif" alt="Deep Sea Cooling">
+        <span class="card-tag">Cooling</span>
+      </div>
+      <h3>Deep-Sea Cooling Systems</h3>
+      <p>Using ocean water to naturally cool buildings in coastal cities, reducing energy consumption and emissions. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/urbanagric.jpg" alt="Urban Agriculture">
+        <span class="card-tag">Agriculture</span>
+      </div>
+      <h3>Urban Agriculture</h3>
+      <p>Rooftop gardens and community farms produce food locally, reducing carbon footprint and supporting communities. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/climateedu.webp" alt="Climate Education">
+        <span class="card-tag">Education</span>
+      </div>
+      <h3>Climate Education Hubs</h3>
+      <p>Centers and workshops designed to educate citizens and youth on sustainability and climate solutions. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/solar-powered-rural-clinic.jpg" alt="Renewable Facilities">
+        <span class="card-tag">Infrastructure</span>
+      </div>
+      <h3>Renewable-Powered Public Facilities</h3>
+      <p>Hospitals, schools, and offices powered by solar, wind, or other renewable sources for sustainability. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/india-biodiversity.jpg" alt="Biodiversity Conservation">
+        <span class="card-tag">Nature</span>
+      </div>
+      <h3>Biodiversity Conservation Areas</h3>
+      <p>Protecting wildlife and restoring habitats in urban and surrounding areas to maintain ecological balance. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/greentech.webp" alt="Green Technology">
+        <span class="card-tag">Technology</span>
+      </div>
+      <h3>Green Tech Innovation Centers</h3>
+      <p>Developing new technologies for waste management, energy, and urban climate resilience across Bunmian cities. <em>Project details forthcoming.</em></p>
+    </div>
+
+    <div class="card">
+      <div class="card-image">
+        <img src="image/sustainablehome.webp" alt="Eco-Friendly Building Materials">
+        <span class="card-tag">Construction</span>
+      </div>
+      <h3>Eco-Friendly Building Materials</h3>
+      <p>Using sustainable materials like clay, prefabricated homes, shipping containers, and 3D-printed structures to reduce environmental impact. <em>Project details forthcoming.</em></p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Bunmiancity LTD. All rights reserved. | Contact: info@bunmiancity.com
+  </footer>
+
+  <!-- JS Scroll Animations -->
+  <script>
+    const fadeElements = document.querySelectorAll('.mission-card, .card');
+
+    const fadeOnScroll = () => {
+      fadeElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if(rect.top < window.innerHeight - 100){
+          el.classList.add('fade-in');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', fadeOnScroll);
+    window.addEventListener('load', fadeOnScroll);
+  </script>
+
+</body>
+</html>

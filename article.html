@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Climate Action Article | Bunmiancity LTD</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+<style>
+  body {
+    font-family: 'Cinzel', serif;
+    margin: 0;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.7;
+  }
+  header {
+    background: url('image/climate-hero.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+  }
+  header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+  header p { font-size: 1.2rem; }
+
+  .content { max-width: 900px; margin: auto; padding: 2rem; }
+  .section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    border-left: 5px solid #4CAF50;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+  }
+  .section.visible { opacity: 1; transform: translateY(0); }
+  .section h2 { color: #4CAF50; margin-bottom: 1rem; }
+  .section p { margin-bottom: 1rem; }
+
+  .download {
+    display: block;
+    width: max-content;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+  }
+  .download:hover { background-color: #45a049; }
+
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background: #2f2f2f;
+    color: #fff;
+  }
+  header {
+  background-color: #f4f7f6; /* soft, neutral background */
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-family: 'Cinzel', serif;
+  font-weight: 500;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #4CAF50; /* highlight on hover */
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div>
+  <nav class="navbar">
+    <a href="home.html" class="nav">Home</a> |
+    <a href="vision.html" class="nav">Vision</a> |
+    <a href="principle.html" class="nav">Principle</a> |
+    <a href="focusarea.html" class="nav">Focus Area</a> |
+    <a href="engagement.html" class="nav">Engagement</a> |
+    <a href="contact.html" class="nav">Contact</a>
+  </nav>
+</div>
+
+  <h1>When Climate Change Disrupts Childhood</h1>
+  <p>Protecting Education, Health, and Safety Together</p>
+  <a class="download" href="kehinde article.pdf" download>Download Full PDF</a>
+</header>
+
+<div class="content">
+  <div class="section">
+    <h2>Climate Impacts on Children</h2>
+    <p>Children are increasingly exposed to floods, heatwaves, school closures, and limited access to clean water...</p>
+  </div>
+
+  <div class="section">
+    <h2>Historical Context & Fossil Fuels</h2>
+    <p>Since the Industrial Revolution, human reliance on fossil fuels has contributed to climate crises globally...</p>
+  </div>
+
+  <div class="section">
+    <h2>Greenhouse Gases & Global Warming</h2>
+    <p>Greenhouse gases trap heat, shifting the Earth's climate balance...</p>
+  </div>
+
+  <div class="section">
+    <h2>Policy Gaps & Solutions</h2>
+    <p>Although climate policies exist, weak implementation and funding gaps hinder progress...</p>
+  </div>
+
+  <div class="section">
+    <h2>The Role of Education & Awareness</h2>
+    <p>Climate education and public awareness campaigns are crucial to closing the climate-action gap...</p>
+  </div>
+</div>
+
+<footer>
+  <p>Prepared by Bunmiancity LTD Climate Team &copy; 2025</p>
+</footer>
+
+<script>
+  // Scroll reveal effect
+  const sections = document.querySelectorAll('.section');
+  const reveal = () => {
+    const triggerBottom = window.innerHeight * 0.85;
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+      if(sectionTop < triggerBottom){
+        section.classList.add('visible');
+      }
+    });
+  };
+  window.addEventListener('scroll', reveal);
+  reveal(); // initial check
+  document.getElementById('downloadPdf').addEventListener('click', function(e){
+    e.preventDefault();
+    const link = document.createElement('a');
+    link.href = this.href;
+    link.download = 'kehinde article.pdf'; // The file name to save as
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+</script>
+
+</body>
+</html>
